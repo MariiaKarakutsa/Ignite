@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 2</title>
+        <script>
+
+            function isEmpty(obj){
+				var count = 0;
+				for(var key in obj){
+					count++;
+				}
+				if(count != 0) {
+					return false;
+				}
+				return true;
+			}; //Создана функция, которая возвращает true, если в объекте нет свойств и false – если хоть одно свойство есть.
+
+			//Проверка
+			var obj1 = {};
+			alert( isEmpty(obj1) ); // true
+
+			var obj2 = {property: 'some property'};
+			alert( isEmpty(obj2) ); // false
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

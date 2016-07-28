@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework - task 3</title>
+        <script>
+
+           arr1 = [[1,2],[3,4],[5,6]];
+		   
+			//Функция bigToSmall, преобразующая двомерный массив в одномерный:
+		   var bigToSmall = function(arr) {
+				var res = [];
+				for (i = 0; i < arr.length; i++) {
+					for (j = 0; j < arr[i].length; j++) {
+					return res.push(arr[i][j]);
+					}
+				}
+			}
+			bigToSmall(arr1);
+			document.write(arr1 + '<br/>');
+			
+			var arr2 = arr1.reverse();
+			document.write(arr2 + '<br/>');
+             
+			document.write(arr2.join('*') + '<br/>');
+			
+			
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 

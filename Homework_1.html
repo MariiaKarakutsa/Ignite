@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework - task 1</title>
+        <script>
+			//Создайте функцию find(arr, value), которая ищет в массиве arr значение value и возвращает его номер, если найдено, или -1, если не найдено.
+            var arr = [1,2,3,4,5];
+			
+			function find(arr, value) {
+				if (value in arr) {
+				return value;
+				} else {
+				return -1;
+				}
+		    }
+			
+			//Проверка.
+			alert(find(arr, 4));
+			alert(find(arr, -8));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

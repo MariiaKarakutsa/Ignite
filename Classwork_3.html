@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 3</title>
+        <script>
+
+            var newArray = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+			
+			sorted = newArray.sort(); //Сортировка методом sort.
+			function compareNumeric(a, b) {
+				if (a >= b) return 1;
+				if (a < b) return -1;
+			}; 
+			sorted = newArray.sort(compareNumeric);//Отсортированный массив.
+			document.write(sorted + '<br/>');
+			
+			document.write("Максимальное значение массива:" + " " + sorted[13] + '<br/>');
+			document.write("Минимальное значение массива:" + " " + sorted[0] + '<br/>');
+			
+			var positiveArr = sorted.filter(function (number) {
+				return (number > 0) & (number % 2 == 0);
+				});	
+			document.write("Все положительные и чётные числа массива:" + " " + positiveArr + '<br/>');
+				
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
