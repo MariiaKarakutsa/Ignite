@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Homework - task 2</title>
+        <script>
+
+        //Создайте функцию strCount, которая принимает один аргумент (объект) и считает количество свойств строкового типа.
+		
+		function strCount(obj) {
+			var countString = 0;
+			for(var key in obj) {
+				if (typeof obj[key] == 'string') {
+				countString++; 
+				};
+				};
+				return count;
+			};
+		
+		var obj = {
+			first: "1",
+			second: "2",
+			third: false,
+			fourth: ["anytime",2,3,4],
+			fifth:  null
+		}
+		
+		var count = strCount(obj);
+		alert(count);
+		
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 

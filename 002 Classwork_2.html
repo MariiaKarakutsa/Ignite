@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 2</title>
+        <script>
+
+		//Напишите функцию, возвращающую количество собственных вызовов.
+		function fn() {
+			var numberOfCount = 1;
+				function counter() {
+					return numberOfCount++;
+				}
+			return counter;
+		}
+		var counter = fn();
+		alert(counter()); // 1
+		alert(counter()); // 2
+		alert(counter()); // 3
+		alert(counter()); // 4
+		alert(counter()); // 5
+		
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 
