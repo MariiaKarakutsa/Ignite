@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 3</title>
+        <script>
+
+        /*Напишите функцию-конструктор Summator, которая создает объект с двумя методами.
+		Метод sum(a,b) возвращает сумму двух значений;
+		Метод run() запрашивает два значения при помощи prompt и выводит их сумму, используя метод sum.
+		В итоге вызов new Summator().run() должен спрашивать два значения и выводить их сумму.*/
+		
+		function Summator() {
+			this.sum = function(a, b) {
+				return +this.a + +this.b;
+			};
+			this.run = function() {
+				this.a = prompt('Input the first value');
+				this.b = prompt('Input the second value');
+				return this.sum()
+			};
+		}
+		
+		var calculator = new Summator().run();
+
+		alert( "Сумма=" + calculator);
+		
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 
