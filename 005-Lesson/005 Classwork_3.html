@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 3</title>
+        <script>
+
+        //Напишите функцию, которая принимает один аргумент и возвращает его тип данных.
+		//Выполните обработку исключений в случае передачи двух и больше аргументов.
+		
+		function whatTheType(arg) {
+			if (arguments.length > 1) {
+				alert("You have to input only one argument!");
+			} else {
+				return typeof arg;
+			}
+		}
+		
+		alert(whatTheType(10));                 // 'number'
+        alert(whatTheType(false));              // 'boolean'
+        alert(whatTheType("Hello"));            // 'string'
+        alert(whatTheType(undefined));          // 'undefined'
+        alert(whatTheType(null));               // 'object' (ошибка в языке)
+        alert(whatTheType(document.write));     // 'function'
+        alert(whatTheType({}));                 // 'object'
+        alert(whatTheType([]));                 // 'object'
+        alert(whatTheType(new Date));           // 'object'
+		alert(whatTheType(10, 12));             // 'You have to input only one argument!'
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 
