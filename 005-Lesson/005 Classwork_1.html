@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Classwork - task 1</title>
+        <script>
+
+        /*Напишите функцию printNumber, которая последовательно выводит в консоль числа от 1 до 20,
+		с интервалом между числами 100мс. То есть, весь вывод должен занимать 2000мс, в течение которых каждые 100мс
+		в консоли появляется очередное число.*/
+		
+
+		var counter = 1;
+		function printNumber() {
+			console.log(counter++ + '<br/>')
+		};
+		
+		var timer = setInterval(printNumber, 100);
+		
+		setTimeout(function() {
+		clearInterval(timer);  
+		}, 2000);
+		
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+ 
